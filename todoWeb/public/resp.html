@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="todocss.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<!-- Cores: w3-dark-grey  #22142b w3-teal LightSeaGreen #20B2AA #D3D3D3-->
+
+<body>
+<!-- Menu -->
+	<div class="w3-bar w3-dark-grey menu_todo w3-top">
+		<div class="w3-bar-item w3-col s5 m4 l2">
+			<a href="index.html" style="text-decoration: none"><h2> .TODO<font color="	#20B2AA">LIST</font></h2></a>
+		</div>
+		<div class="w3-bar-item w3-col s1 m4 l8 hidden_todo">.</div>
+		<div class=" w3-bar-item w3-padding-large w3-col s3 m2 l1">
+			<a href="resp.html"><img src="imagens/add-user-3-xxl.png" class="icon_todo" alt="Norway"></a>
+		</div>
+		<div class="w3-bar-item w3-padding-large w3-col s3 m2 l1">
+			<a href="index.html"><img src="imagens/house-xxl.png" class="icon_todo" alt="Norway"></a>
+		</div>
+	</div>
+	
+	<div class="w3-bar hidden_todo">
+		<div class="w3-bar-item w3-col s12 m12 l12"><h2>.</h2></div>
+	</div>
+	
+<!-- Lista -->
+	<div class="w3-row">
+		
+		<div class="w3-padding-large w3-col s12 m12 l6">
+			<div class="w3-container w3-padding-large w3-col s12 m12 l12  ">
+		<div class="w3-container w3-dark-grey">
+			<h3 class="center_todo w3-container "><font color="	#20B2AA"> CADASTRAR RESPONSÁVEL </font></h3>
+
+			
+			<label>Nome: </label><br>
+			<input id="Nome_resp" class="w3-round w3-input w3-border" type="text"><br>
+			
+			<label>Email: </label><br>
+			<input id="email_resp" class="w3-round w3-input w3-border" type="text"><br>
+			
+			<label>Nascimento: </label><br>
+			<input id="nasc_resp" class="w3-round w3-input w3-border" type="text"><br>
+			
+			<label>Telefone: </label><br>
+			<input id="tel_resp" class="w3-round w3-input w3-border" type="text"><br>
+			
+			<br>
+			<input type="button" id="adicionar_resp" class="w3-button w3-round-large w3-border right_todo" value="Adicionar" onclick="novoResp()">
+			<br>
+			<br>
+			<br>
+		</div>
+		</div>
+		</div>
+		
+			
+		<div class="w3-padding-large w3-col s12 m12 l6 ">
+			<h3 class="center_todo w3-container LightSeaGreen_todo" > RESPONSÁVEIS CADASTRADOS </h3>
+			<font color="#A5A5A5">
+			<div id="lista_responsaveis" class="list_todo ">
+		
+
+			
+			</div>
+			</font>
+		</div>
+	
+	</div>
+	
+	
+	<script type="text/javascript" src="script_resp.js"></script>
+</body>
+</html>
