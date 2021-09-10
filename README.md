@@ -19,7 +19,7 @@ $ npm install body-parser
 Com isto e com a pasta de arquivos do site salva no computador, é necessário colocar o 
 servidor para rodar.
 
-$ node <caminho-do-arquivo>/server.js
+$ node 'caminho-do-arquivo'/server.js
 
 Como o servidor foi codificado para rodar na porta 8080, será preciso informar na barra do 
 navegador o seguinte endereço: http://localhost:8080/
